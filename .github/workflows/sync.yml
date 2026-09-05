@@ -1,0 +1,41 @@
+name: Sync Strava activities
+
+on:
+  schedule:
+    - cron: "17 11 * * *"  # daily at 11:17 UTC
+  workflow_dispatch:        # allows manual runs from the Actions tab
+
+permissions:
+  contents: write           # lets the workflow commit updated data files
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Sync activities from Strava
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python strava_sync.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "Sync Strava activities"
+            git push
+          else
+            echo "No changes to commit."
+          fi
