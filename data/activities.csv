@@ -1,5 +1,5 @@
 id,name,sport_type,type,start_date,start_date_local,distance,moving_time,elapsed_time,total_elevation_gain,average_speed,max_speed,average_heartrate,max_heartrate,average_cadence,average_watts,kilojoules,suffer_score,kudos_count,comment_count,visibility,commute,trainer
-20052953743,Morning Hike,Hike,Hike,2026-09-05T16:01:04Z,2026-09-05T10:01:04Z,9349.0,9712,12633,495.4,0.963,2.46,,,,,,,0,0,everyone,False,False
+20052953743,Morning Hike,Hike,Hike,2026-09-05T16:01:04Z,2026-09-05T10:01:04Z,9349.0,9712,12633,495.4,0.963,2.46,,,,,,,6,0,everyone,False,False
 19966813228,Morning Ride,Ride,Ride,2026-08-30T13:51:18Z,2026-08-30T07:51:18Z,80231.6,11060,12785,392.1,7.254,15.0,,,,,,,8,1,everyone,False,False
 19936614674,Morning Run,Run,Run,2026-08-28T13:34:20Z,2026-08-28T07:34:20Z,8048.2,2601,2804,32.9,3.094,4.361,,,,,,,2,0,everyone,False,False
 19930076181,Afternoon Run,Run,Run,2026-08-27T23:30:42Z,2026-08-27T17:30:42Z,4872.7,1403,4406,39.4,3.473,5.388,,,,,,,2,0,everyone,False,False
