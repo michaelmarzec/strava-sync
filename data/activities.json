@@ -25,13 +25,13 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 1,
-    "kudos_count": 5,
-    "comment_count": 2,
+    "kudos_count": 7,
+    "comment_count": 4,
     "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a20193105345",
-      "summary_polyline": "upsqFhro_SBl@Eh@@bAEh@@b@A`@DjAEb@@t@B^Cj@Bx@Cd@?vA@\\AR@JCh@@p@?`@CTB`BCdBDxDCh@@nCC^@JAhABh@EfA@dCEdABpAAPBnCAN@jA?l@CN@fAA\\Dp@Ef@BVA`@B\\CjABr@G`@?TB`@A`B@TEh@@BAzABR",
+      "summary_polyline": "upsqFpho_SBPC`BBz@?f@CHAXDhBEh@@bAEh@@b@A`@DjAEb@@t@B^Cj@Bx@Cd@?vA@\\AR@JCh@@p@?`@CTB`BCdBDxDCh@@nCC^@JAhABh@EfA@dCEdABpAAPBnCAN@jA?l@CN@fAA\\Dp@Ef@BVA`@B\\CjABr@G`@Bv@A`B@TEh@@BAzAD\\?VBf@EZB|@C`@?|B?BE?",
       "resource_state": 2
     },
     "trainer": false,
